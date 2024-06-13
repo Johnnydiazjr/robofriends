@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to left, rgba(232, 245, 39, 0.8), rgba(245, 133, 39, 0.8));
+}   
+
+@font-face {
+font-family: 'Blade Runner Movie Font';
+font-style: normal;
+font-weight: normal;
+src: local('Blade Runner Movie Font'), url('blade_runner.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Blade Runner Movie Font';
+  font-weight: 200;
+  color: #000000; /* Set the color to black, or choose any other valid color value */
+}
+
