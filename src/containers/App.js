@@ -3,9 +3,11 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 // import { robots } from './robots';
 import Scroll from '../components/Scroll';
+import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css';
 class App extends Component {
-	constructor() {
+	
+constructor() {
 		super()
 		this.state = {
 	robots: [], 
@@ -35,7 +37,9 @@ render() {
 					<h1 className='f1'>RoboFriends</h1>
 					<SearchBox searchChange={this.onSearchChange}/>
 					<Scroll>
+					<ErrorBoundary> 
 					<CardList robots={filteredRobots} />
+					</ErrorBoundary>
 					</Scroll>
 			  </div>
 		 );	
